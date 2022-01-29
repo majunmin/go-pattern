@@ -12,6 +12,7 @@ type Context struct {
 
 // Handler provider a handle interface
 type Handler interface {
+	// handle msg: 上下文信息
 	handle(msg *Context) string
 }
 
